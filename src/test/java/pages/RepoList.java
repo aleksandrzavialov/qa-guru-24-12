@@ -46,5 +46,4 @@ public class RepoList {
         return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
-
 }

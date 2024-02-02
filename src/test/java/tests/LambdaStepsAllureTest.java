@@ -47,8 +47,5 @@ public class LambdaStepsAllureTest extends TestBase{
             $(byText(RepoData.issueText)).shouldBe(interactable);
         });
 
-
-
-
     }
 }
