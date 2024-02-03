@@ -6,7 +6,7 @@ import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
-import pages.RepoList;
+import pages.RepoListPage;
 
 public class AnnotatedStepAllureTest {
     @Test
@@ -17,7 +17,7 @@ public class AnnotatedStepAllureTest {
     @DisplayName("It is possible to search for an issue in certain repo using annotated steps")
     void simpleAllureWithAnnotatedStepsTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        RepoList steps = new RepoList();
+        RepoListPage steps = new RepoListPage();
 
         steps.openMainPage();
         steps.searchForRepository(RepoData.repositoryName);
